@@ -23,7 +23,11 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // --- CORS CONFIGURATION ---
-const allowedOrigins = ['http://localhost:5173', 'http://localhost:3000'];
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  process.env.CLIENT_URL // <-- Add this line for the live frontend URL
+];
 const corsOptions = {
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.indexOf(origin) !== -1) {

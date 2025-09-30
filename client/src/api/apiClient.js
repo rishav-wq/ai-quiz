@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const apiClient = axios.create({
-  baseURL: 'http://localhost:5000', // Your backend URL
+   baseURL: process.env.REACT_APP_API_URL || 'http://localhost:5000', // Your backend URL
 });
 
 // This "interceptor" runs before every request
