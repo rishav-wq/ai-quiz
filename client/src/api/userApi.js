@@ -1,7 +1,7 @@
 // src/api/userApi.js
 import axios from 'axios';
 
-const API_URL = 'http://localhost:5000/api/users';
+const API_URL = 'https://ai-quiz-hnh3.onrender.com/api/users';
 
 /**
  * Logs a user in by sending their credentials to the backend.
