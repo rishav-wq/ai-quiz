@@ -3,7 +3,7 @@ import axios from 'axios';
 // src/api/quizApi.js
 import apiClient from './apiClient';
 // The base URL of our backend server
-const API_URL = 'http://localhost:5000/api/quizzes';
+const API_URL = 'https://ai-quiz-hnh3.onrender.com/api/quizzes';
 
 /**
  * Sends the text and question count to the backend to generate a quiz.
